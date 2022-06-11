@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+    app-div-div:
+        build: .
+        command: bash runserver.sh
+        volumes:
+            - ./:/usr/src/app/
+    
+    nginx-dev-dev:
+        image: nginx
+        volumes:
+            - ./nginx_conf:/etc/nginx/conf.d
+            - ./media:/usr/src/app/media
+        ports:
+            - 80:80
+       
