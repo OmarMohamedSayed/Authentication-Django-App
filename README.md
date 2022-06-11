@@ -68,6 +68,10 @@ Forth you can get your profile
 ```velopment
 http GET http://127.0.0.1:8000/api/profile/<:phonenumber> "Authorization: Token {YOUR_TOKEN}"
 ```
+![register](./readme-images/register.png)
+![login](./readme-images/login.png)
+![profile](./readme-images/profile.png)
+![profile_validation](./readme-images/profile_errors.png)
 
 
 ### Deployment Part
@@ -88,3 +92,7 @@ To run the tests, `cd` into the directory where `manage.py` is:
 ```sh
 (env)$ python manage.py test
 ```
+
+![Tests](./readme-images/test_case.png)
+
+
